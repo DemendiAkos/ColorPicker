@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ColorPickerWithSlider</string>
+    <string name="colorRed">RED: 0</string>
+    <string name="colorGreen">GREEN: 0</string>
+    <string name="colorBlue">BLUE: 0</string>
+
+
+    <string name="finalColor">(0,0,0)</string>
+</resources>

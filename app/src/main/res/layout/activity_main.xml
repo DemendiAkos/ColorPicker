@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        android:paddingBottom="10dp"
+        android:id="@+id/seekBarRed"
+        android:layout_alignParentTop="true"
+        android:max="255"
+        android:min="0"
+        />
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        android:paddingBottom="10dp"
+        android:id="@+id/seekBarGreen"
+        android:layout_below="@id/seekBarRed"
+        android:max="255"
+        android:min="0"
+        />
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        android:paddingBottom="10dp"
+        android:id="@+id/seekBarBlue"
+        android:layout_below="@id/seekBarGreen"
+        android:max="255"
+        android:min="0"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="RED: 0"
+        android:textSize="25sp"
+        android:id="@+id/textViewRed"
+        android:layout_below="@id/seekBarBlue"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="GREEN: 0"
+        android:textSize="25sp"
+        android:id="@+id/textViewGreen"
+        android:layout_below="@id/textViewRed"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BLUE: 0"
+        android:textSize="25sp"
+        android:id="@+id/textViewBlue"
+        android:layout_below="@id/textViewGreen"
+        />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/displayArea"
+        android:layout_below="@id/textViewBlue">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/finalColor"
+            android:textSize="40sp"
+            android:id="@+id/displayColor"
+            android:layout_gravity="center"
+            />
+    </FrameLayout>
+
+
+</RelativeLayout>
